@@ -2,5 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js"
+  "/GroomGuide": "pages/GroomGuide.js",
+  "/BrideGuide": "pages/BrideGuide.js",
+  "/Career": "pages/Career.js",
+  "/SignIn": "pages/SignIn.js"
 }

@@ -9,10 +9,20 @@ self.__BUILD_MANIFEST = {
   "lowPriorityFiles": [],
   "rootMainFiles": [],
   "pages": {
-    "/": [
+    "/Career": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/index.js"
+      "static/chunks/pages/Career.js"
+    ],
+    "/GroomGuide": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/GroomGuide.js"
+    ],
+    "/SignIn": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/SignIn.js"
     ],
     "/_app": [
       "static/chunks/webpack.js",

@@ -139,7 +139,7 @@ export default function Header() {
                 </MenuItem>
                 <MenuItem
                   as={Link}
-                  href="/BankAccount"
+                  href="/SaftySecurity"
                   _hover={{
                     bg: "linear-gradient(180deg, rgb(235, 187, 84) 0%, rgb(184, 137, 35) 100%)",
                     color: "black",
@@ -182,6 +182,17 @@ export default function Header() {
                 _hover={{ color: "gray.400" }}
               >
                 Success Story
+              </Button>
+            </Link>
+            <Link href="/Career">
+              <Button
+                color="white"
+                bg={"transparent"}
+                colorScheme="transparent"
+                aria-label="Contact Us"
+                _hover={{ color: "gray.400" }}
+              >
+                Careers
               </Button>
             </Link>
             <Link href="#">
@@ -239,7 +250,7 @@ export default function Header() {
             justifyContent={"center"}
             alignItems={"center"}
           >
-            <Link href="https://wa.me/message/YSBWOOKTVDLTC1" isExternal>
+            <Link href="/SignIn" isExternal>
               <Button
                 bgGradient="linear(180deg, rgb(38, 38, 38) 0%, rgb(12, 12, 12) 100%)"
                 border="1px solid rgba(255, 255, 255, 0.2)"
