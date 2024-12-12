@@ -21,7 +21,7 @@ const CardSection = ({ imagePosition, heading, text, imageSrc, altText }) => {
           {/* Shadow Effect behind Image */}
           <Box
             pos="absolute"
-            right="-250px"
+            right={{base:'0px',sm:'0px',md:'-250px'}}
             bottom="0"
             transform="translateX(-50%)"
             width={{ base: "200px", sm: "300px", md: "400px", lg: "500px" }}
@@ -62,7 +62,7 @@ const CardSection = ({ imagePosition, heading, text, imageSrc, altText }) => {
           position="relative"
           w={{ base: "100%", md: "50%" }}
           display="flex"
-          justifyContent="flex-end"
+          justifyContent={{base:'center',sm:'center',md:'flex-end'}}
         >
           {/* Shadow Effect behind Image */}
           <Box
@@ -76,6 +76,7 @@ const CardSection = ({ imagePosition, heading, text, imageSrc, altText }) => {
             borderRadius="full"
             filter="blur(100px)"
             zIndex={0}
+            display={{base:'none',sm:'none',md:'none',xxxl:'none'}}
           />
           <Image
             src={imageSrc}
@@ -121,15 +122,15 @@ const ComplimentCard = () => {
 
   return (
     <Box py={'60px'}>
-        <Box  maxW={'63%'} m={'auto'} mb={'70px'}>
-      <Heading textAlign={'center'} color={'white'} fontFamily={'Poppins'} fontSize={'35px'} >
+        <Box  maxW={{base:'100%',sm:'100%',md:'100%',xxl:'65%'}} m={'auto'} mb={'70px'}>
+      <Heading textAlign={'center'} color={'white'} fontFamily={'Poppins'} fontSize={{base:'30px',sm:'30px',md:'35px',xxl:'35px'}} >
       Innovative Solutions for Your
-      <Text as={'span'} ml={'6px'} color={'#D0A03A'}  fontFamily={'Poppins'} fontSize={'38px'} >Matchmaking Journey</Text>
+      <Text as={'span'} ml={'6px'} color={'#D0A03A'}  fontFamily={'Poppins'} fontSize={{base:'24px',sm:'24px',md:'35px',xxl:'35px'}} >Matchmaking Journey</Text>
       </Heading>
     
      
       </Box>
-      <Box>
+      <Box >
         {cardContent.map((content, index) => (
           <Box key={index} bg="black" pb="100px">
             <Container maxW="1170px" m="auto">

@@ -25,38 +25,40 @@ const plans = [
     ],
   },
   {
-    name: "Wealth Creation",
+    name: "24-Hour Rishta Rush",
     // price: 39,
     features: [
-      { text: "Unlimited Access", available: true },
-      { text: "Unlock All Courses", available: true },
-      { text: "Step by Step Tutorial", available: true },
-      { text: "Join Private Community", available: true },
-      { text: "1 on 1 Coaching", available: true },
+      { text: "Unlimited profile views", available: true },
+      { text: "Unlimited Direct Connection", available: true },
+      { text: "24-hour access", available: true },
+      { text: "No restrictions", available: true },
+      { text: "Enhanced matching experience", available: true },
+      { text: "Increased chances of finding a compatible match", available: true },
+     
    
     ],
     tag: "BEST VALUE",
   },
   {
-    name: "Millionaire Fastlane",
-    price: 49,
+    name: "1 Month",
+    price: 2250,
     features: [
-      { text: "Unlimited Access", available: true },
-      { text: "Unlock All Courses", available: true },
-      { text: "Step by Step Tutorial", available: true },
-      { text: "Join Private Community", available: true },
-      { text: "1 on 1 Coaching", available: true },
+      { text: "50 Direct Connection", available: true },
+      { text: "view Unlimited profile", available: true },
+      { text: "Saved Unlimited Profiles", available: true },
+      { text: "National & International", available: true },
+      { text: "Horoscope Matching ", available: true },
     ],
   },
   {
-    name: "Ultimate Success",
-    price: 99,
+    name: "3 Month",
+    price: 5250,
     features: [
-      { text: "Unlimited Access", available: true },
-      { text: "Unlock All Courses", available: true },
-      { text: "Step by Step Tutorial", available: true },
-      { text: "Join Private Community", available: true },
-      { text: "1 on 1 Coaching", available: true },
+      { text: "10 Direct Connection", available: true },
+      { text: "view Unlimited profile", available: true },
+      { text: "Saved Unlimited Profiles", available: true },
+      { text: "National & International", available: true },
+      { text: "Horoscope Matching ", available: true },
     
     ],
     tag: "PREMIUM",
@@ -66,7 +68,7 @@ const plans = [
 const Pricing = () => {
   return (
     <Box bg="black" color="white" p={8}>
-       <Box  maxW={'63%'} m={'auto'}  mb={'18px'}>
+       <Box  maxW={{base:'100%',sm:'100%',md:'100%',xxl:'65%'}} m={'auto'}  mb={'18px'}>
       <Heading textAlign={'center'} color={'white'} fontFamily={'Poppins'} fontSize={'35px'} fontWeight={'400'} lineHeight={'48px'}>
       Rishta Packages &
       <Text as={'span'} ml={'6px'} color={'#D0A03A'}  fontFamily={'Poppins'} fontSize={'38px'} mb={'45px'}>Best Match</Text>
@@ -91,7 +93,7 @@ const Pricing = () => {
               boxShadow="0px 0.796192px 2.38858px -0.625px rgba(0, 0, 0, 0.05), 0px 2.41451px 7.24352px -1.25px rgba(0, 0, 0, 0.05), 0px 6.38265px 19.148px -1.875px rgba(0, 0, 0, 0.05), 0px 20px 60px -2.5px rgba(0, 0, 0, 0.05)"
               opacity="1"
               p="30px"
-              w={{ base: "full", sm: "45%", md: "30%" }}
+              w={{ base: "full", sm: "45%", md: "48%" }}
               position="relative"
               sx={{
                 transition: "all 0.3s",
@@ -103,14 +105,12 @@ const Pricing = () => {
                 },
               }}
             >
-              <Heading as="h2" size="md" mb={2}>
+              <Heading as="h2" size="md" my={3}>
                 {plan.name}
               </Heading>
               <Text fontSize="2xl" fontWeight="bold" mb={4}>
                 {plan.price}
-                <Text as="span" fontSize="sm">
-                 Continue
-                </Text>
+                
               </Text>
               {plan.tag && (
                 <Tag
