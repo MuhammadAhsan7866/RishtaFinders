@@ -14,7 +14,9 @@ import {
 const plans = [
   {
     name: "Free for Month ",
-    // price: 0,
+    price: 0,
+    currenyname:'Rs',
+    btnname:'Free trail for one month',
     features: [
       { text: "10 Direct Connection", available: true },
       { text: "view Unlimited profile", available: true },
@@ -26,14 +28,16 @@ const plans = [
   },
   {
     name: "24-Hour Rishta Rush",
-    // price: 39,
+    price: 1000,
+    currenyname:'Rs / 24hours',
+    btnname:'Upgrade your Plan',
     features: [
       { text: "Unlimited profile views", available: true },
       { text: "Unlimited Direct Connection", available: true },
       { text: "24-hour access", available: true },
       { text: "No restrictions", available: true },
       { text: "Enhanced matching experience", available: true },
-      { text: "Increased chances of finding a compatible match", available: true },
+      
      
    
     ],
@@ -42,6 +46,8 @@ const plans = [
   {
     name: "1 Month",
     price: 2250,
+    currenyname:'Rs',
+    btnname:'Upgrade your Plan',
     features: [
       { text: "50 Direct Connection", available: true },
       { text: "view Unlimited profile", available: true },
@@ -53,6 +59,8 @@ const plans = [
   {
     name: "3 Month",
     price: 5250,
+    currenyname:'Rs',
+    btnname:'Upgrade your Plan',
     features: [
       { text: "10 Direct Connection", available: true },
       { text: "view Unlimited profile", available: true },
@@ -105,13 +113,18 @@ const Pricing = () => {
                 },
               }}
             >
-              <Heading as="h2" size="md" my={3}>
+              <Heading as="h2" fontSize={'25px'} my={3}color={'#D0A03A'} borderBottom={'1px solid #D0A03A'} maxW={'fit-content'}>
                 {plan.name}
               </Heading>
-              <Text fontSize="2xl" fontWeight="bold" mb={4}>
+             <Flex color={'#D0A03A'} fontSize={'21px'}>
+             <Text  fontWeight="bold" mb={4}>
                 {plan.price}
-                
+                <Text as={'span'}>
+                {plan.currenyname}
+                </Text>
               </Text>
+             </Flex>
+             
               {plan.tag && (
                 <Tag
                   position="absolute"
@@ -153,7 +166,7 @@ const Pricing = () => {
                 p={"8px 24px"}
                 borderRadius={"50px"}
               >
-                Join Campus Today
+               {plan.btnname}
               </Button>
               <Text color="#bfb7b7" textAlign="center" fontSize={"12px"} w={'100%'}>
                 Lock-in your price before it goes up

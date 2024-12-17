@@ -53,23 +53,29 @@ export default function LargeWithAppLinksAndSocial() {
               >
                 Innovate today, lead tomorrow.
               </Text> */}
-              <Flex flexDirection={"column"} gap={"30px"}>
-                <Flex alignItems={"center"} gap={"25px"} mt={"0px !important"}>
-                  <Img src="/fb-footer.svg" />
+              <Flex flexDirection={"column"} gap={"18px"}>
+                <Flex alignItems={"center"} gap={"18px"} mt={"0px !important"}>
+                  <Img w={'10%'} src="/fb.png" />
                   <Link href={"#"} color={"white"}>
                     Facebook
                   </Link>
                 </Flex>
                 <Flex alignItems={"center"} gap={"25px"} mt={"0px !important"}>
-                  <Img src="/twitter-footer.svg" />
+                  <Img w={'10%'} src="/instaaa.png" />
                   <Link href={"#"} color={"white"}>
-                    Twitter
+                    Instagram
                   </Link>
                 </Flex>
                 <Flex alignItems={"center"} gap={"25px"} mt={"0px !important"}>
-                  <Img src="/lindin-footer.svg" />
+                  <Img src="/tiktok.png" w={'10%'}/>
                   <Link href={"#"} color={"white"}>
-                    Linkedin
+                   Tiktok
+                  </Link>
+                </Flex>
+                <Flex alignItems={"center"} gap={"25px"} mt={"0px !important"}>
+                  <Img src="/tube.png" w={'10%'}/>
+                  <Link href={"#"} color={"white"}>
+                   Youtube
                   </Link>
                 </Flex>
               </Flex>
@@ -81,20 +87,21 @@ export default function LargeWithAppLinksAndSocial() {
               <Text color={'white'}> Pages</Text>
             </Box>
             <Link color={'white'} href={'#'}>Home</Link>
-            <Link color={'white'} href={'#'}>Our Work</Link>
-            <Link color={'white'} href={'#'}> Case Studies</Link>
-            <Link color={'white'} href={'#'}> Services</Link>
-            <Link color={'white'} href={'#'}> About</Link>
+            <Link color={'white'} href={'#'}>About</Link>
+            <Link color={'white'} href={'#'}> Success Story</Link>
+            <Link color={'white'} href={'#'}> Careers</Link>
+            <Link color={'white'} href={'#'}> Plans</Link>
+            <Link color={'white'} href={'#'}> Contact</Link>
           </Stack>
 
           <Stack align={'flex-start'} gap={'14px'}>
             <Box pb={'13px'} borderBottom={'1px solid #253538'} w={'70%'}>
               <Text color={'white'}> Services</Text>
             </Box>
-            <Link color={'white'} href={'#'}>Web Design&Development</Link>
-            <Link color={'white'} href={'#'}>Seo Optimization</Link>
-            <Link color={'white'} href={'#'}>Ecommerce Website</Link>
-            <Link color={'white'} href={'#'}>Digital Marketing</Link>
+            <Link color={'white'} href={'#'}>Support Mariage</Link>
+            <Link color={'white'} href={'#'}>Safty Security</Link>
+            <Link color={'white'} href={'#'}>Bride Guide</Link>
+            <Link color={'white'} href={'#'}>Groom Guide</Link>
           </Stack>
 
           <Stack align={'flex-start'} gap={'14px'}>

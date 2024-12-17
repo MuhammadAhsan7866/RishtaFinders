@@ -2,8 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/GroomGuide": "pages/GroomGuide.js",
-  "/BrideGuide": "pages/BrideGuide.js",
-  "/Career": "pages/Career.js",
-  "/SignIn": "pages/SignIn.js"
+  "/SignIn": "pages/SignIn.js",
+  "/Register": "pages/Register.js",
+  "/OurVision": "pages/OurVision.js"
 }

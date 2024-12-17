@@ -267,7 +267,7 @@ export default function Header() {
               </Button>
             </Link>
 
-            <Link href="/NifForm">
+            <Link href="/Register" isExternal>
               <Button
                 sx={{
                   background:
