@@ -173,7 +173,7 @@ export default function Header() {
               </MenuList>
             </Menu>
 
-            <Link href="#">
+            <Link href="/SuccessStory">
               <Button
                 color="white"
                 bg={"transparent"}
@@ -195,7 +195,7 @@ export default function Header() {
                 Careers
               </Button>
             </Link>
-            <Link href="#">
+            <Link href="/Cards">
               <Button
                 color="white"
                 bg={"transparent"}
@@ -350,7 +350,7 @@ export default function Header() {
                 </MenuList>
               </Menu>
 
-              <Link href="/#Plans">
+              <Link href="/Cards">
                 <Button
                   bg="transparent"
                   colorScheme="transparent"
@@ -372,7 +372,7 @@ export default function Header() {
                   Events
                 </Button>
               </Link>
-              <Link href="/#">
+              <Link href="/SuccessStory">
                 <Button
                   bg="transparent"
                   colorScheme="transparent"

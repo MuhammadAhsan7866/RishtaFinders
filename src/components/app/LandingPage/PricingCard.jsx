@@ -113,13 +113,13 @@ const Pricing = () => {
                 },
               }}
             >
-              <Heading as="h2" fontSize={'25px'} my={3}color={'#D0A03A'} borderBottom={'1px solid #D0A03A'} maxW={'fit-content'}>
+              <Heading as="h2" fontSize={'25px'} my={3}color={'#D0A03A'} borderBottom={'1px solid #D0A03A'} maxW={'fit-content'} fontFamily={'Poppins'}>
                 {plan.name}
               </Heading>
              <Flex color={'#D0A03A'} fontSize={'21px'}>
-             <Text  fontWeight="bold" mb={4}>
+             <Text  fontWeight="bold" mb={4} fontFamily={'Poppins'}>
                 {plan.price}
-                <Text as={'span'}>
+                <Text as={'span'} fontFamily={'Poppins'}>
                 {plan.currenyname}
                 </Text>
               </Text>

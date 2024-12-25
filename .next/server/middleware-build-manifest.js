@@ -9,20 +9,20 @@ self.__BUILD_MANIFEST = {
   "lowPriorityFiles": [],
   "rootMainFiles": [],
   "pages": {
-    "/OurVision": [
+    "/": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/OurVision.js"
+      "static/chunks/pages/index.js"
     ],
-    "/Register": [
+    "/AdminDashboard": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/Register.js"
+      "static/chunks/pages/AdminDashboard.js"
     ],
-    "/SignIn": [
+    "/SuccessStory": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/SignIn.js"
+      "static/chunks/pages/SuccessStory.js"
     ],
     "/_app": [
       "static/chunks/webpack.js",
